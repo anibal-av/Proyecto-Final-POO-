@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Unidades</title>
+</head>
+<body>
+
+    <a href="../index.html">Volver al Menú Principal</a>
+
+    <h1>Control y Registro de Unidades</h1>
+    <p>Selecciona el tipo de vehículo e ingresa sus datos operativos.</p>
+
+    <form id="form-registro">
+        <label>Tipo de vehículo:</label>
+        <select id="tipo-vehiculo">
+            <option value="camioneta">Camioneta de Reparto</option>
+            <option value="trailer">Tráiler de Carga</option>
+        </select>
+
+        <br><br>
+        <label>Placas:</label>
+        <input type="text" id="placas">
+
+        <br><br>
+        <label>Capacidad de carga (kg):</label>
+        <input type="number" id="capacidad">
+
+        <br><br>
+        <label>Kilometraje:</label>
+        <input type="number" id="kilometraje">
+
+        <br><br>
+        <label>Rendimiento (km/L):</label>
+        <input type="number" id="rendimiento">
+
+        <br><br>
+        <label>Precio del combustible ($/L):</label>
+        <input type="number" id="precio-combustible">
+
+        <div id="grupo-peso-trailer" style="display: none;">
+            <br>
+            <label>Peso extra del tráiler (kg):</label>
+            <input type="number" id="peso-trailer" value="0">
+        </div>
+
+        <br><br>
+        <button type="submit">Registrar vehículo</button>
+    </form>
+
+    <br>
+    <p id="mensaje-registro"></p>
+
+    <h3>Unidades registradas</h3>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Placas</th>
+                <th>Tipo</th>
+                <th>Capacidad</th>
+                <th>Kilometraje</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-unidades">
+        </tbody>
+    </table>
+
+    <script type="module" src="../js/index.js"></script>
+</body>
+</html>
