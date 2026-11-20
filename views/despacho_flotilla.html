@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despacho de Flotilla</title>
+</head>
+<body>
+
+    <a href="../index.html">Volver al Menú Principal</a>
+
+    <h1>Despacho de Flotilla</h1>
+
+    <h2>Asignar viaje</h2>
+
+    <form id="form-despacho">
+        <label>Vehículo disponible:</label>
+        <select id="select-unidad-despacho">
+        </select>
+
+        <br><br>
+
+        <label>Peso de la carga (kg):</label>
+        <input type="number" id="peso-carga">
+
+        <br><br>
+
+        <button type="submit">Asignar viaje</button>
+    </form>
+
+    <p id="mensaje-despacho"></p>
+
+    <h2>Unidades disponibles</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Placas</th>
+                <th>Tipo</th>
+                <th>Capacidad</th>
+                <th>Kilometraje</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-disponibles">
+        </tbody>
+    </table>
+
+    <script type="module" src="../js/index.js"></script>
+
+</body>
+</html>
