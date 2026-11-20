@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Rutas</title>
+</head>
+<body>
+
+    <a href="../index.html">Volver al Menú Principal</a>
+
+    <h1>Cálculo de Costo de Ruta (HU3)</h1>
+    <p>Selecciona el tipo de vehículo e ingresa los datos del viaje.</p>
+
+    <form id="form-calculo">
+        <label>Tipo de vehículo:</label>
+        <select id="tipoVehiculo">
+            <option value="camioneta">Camioneta (Gasolina)</option>
+            <option value="trailer">Tráiler (Diésel + Cuota por peso)</option>
+        </select>
+
+        <br><br>
+
+        <div id="campos-dinamicos">
+            <label>Rendimiento de gasolina (km/L):</label>
+            <input type="number" id="rendimiento" step="any">
+            <br><br>
+            <label>Precio de gasolina ($/L):</label>
+            <input type="number" id="precio-combustible" step="any">
+        </div>
+
+        <br>
+
+        <label>Distancia del viaje (km):</label>
+        <input type="number" id="distancia-km" step="any">
+
+        <br><br>
+
+        <button type="submit">Calcular costo de ruta</button>
+    </form>
+
+    <br>
+    <p id="resultado-costo"></p>
+
+    <script type="module" src="../js/index.js"></script>
+
+</body>
+</html>
