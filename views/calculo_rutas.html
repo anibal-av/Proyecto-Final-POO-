@@ -10,29 +10,17 @@
     <a href="../index.html">Volver al Menú Principal</a>
 
     <h1>Cálculo de Costo de Ruta (HU3)</h1>
-    <p>Selecciona el tipo de vehículo e ingresa los datos del viaje.</p>
+    <p>Selecciona una unidad disponible e ingresa la distancia del recorrido.</p>
 
     <form id="form-calculo">
-        <label>Tipo de vehículo:</label>
-        <select id="tipoVehiculo">
-            <option value="camioneta">Camioneta (Gasolina)</option>
-            <option value="trailer">Tráiler (Diésel + Cuota por peso)</option>
+        <label>Unidad disponible:</label>
+        <select id="select-unidad-ruta">
         </select>
 
         <br><br>
 
-        <div id="campos-dinamicos">
-            <label>Rendimiento de gasolina (km/L):</label>
-            <input type="number" id="rendimiento" step="any">
-            <br><br>
-            <label>Precio de gasolina ($/L):</label>
-            <input type="number" id="precio-combustible" step="any">
-        </div>
-
-        <br>
-
         <label>Distancia del viaje (km):</label>
-        <input type="number" id="distancia-km" step="any">
+        <input type="number" id="distancia-km">
 
         <br><br>
 
