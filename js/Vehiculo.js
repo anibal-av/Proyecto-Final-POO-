@@ -44,4 +44,3 @@ export class Vehiculo {
             this.#kilometraje = nuevoKilometraje;
         }
     }
-}
